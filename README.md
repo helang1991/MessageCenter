@@ -18,8 +18,8 @@
 ![image](https://github.com/helang1991/MessageCenterDemo/blob/master/png/test.png)
 
 ## 效果图
-App2通过Center向App1发送消息，
-![image](https://github.com/helang1991/MessageCenterDemo/blob/master/png/app2.png)
+App2通过Center向App1发送消息<Br/>
+![image](https://github.com/helang1991/MessageCenterDemo/blob/master/png/app2.png)<Br/>
 ![image](https://github.com/helang1991/MessageCenterDemo/blob/master/png/app1.png)
 
 ## 总结
