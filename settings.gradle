@@ -1,0 +1,1 @@
+include ':center', ':app1', ':app2', ':lib'
