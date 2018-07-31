@@ -35,6 +35,7 @@ public class MyService extends Service {
     private IMyAidlInterface.Stub iBinder = new IMyAidlInterface.Stub() {
         @Override
         public void sendMessage(String tag, String message) throws RemoteException {
+            //beginBroadcast和finishBroadcast一定要成对出现，
             callbackList.beginBroadcast();
             sendMessageToAllClient(tag,message);
             Log.d(TAG,"tag="+tag+"  message="+message);
