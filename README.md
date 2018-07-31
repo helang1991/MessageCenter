@@ -11,10 +11,19 @@
 ## 当然还有很多方式，我只列举了几种<Br/>
 因此，采用基于Ibinder的AIDL是更好的方案，效率高，安全性高，综合性能能力最好<Br/>
 ## 流程图
-看下基本的流程图，app要通过一个Server进程来实现消息的消息的发送和接收<Br/>
+看下基本的流程图，app要通过一个Server进程（Center）来实现消息的消息的发送和接收<Br/>
+这样的话，有一个控制中心就可以方便控制所有消息的管理，也方便后续的其他APP的集成<Br/>
+我这里就写的比较简单了
 
-![image](https://github.com/helang1991/MessageCenterDemo/blob/master/test.png)
+![image](https://github.com/helang1991/MessageCenterDemo/blob/master/png/test.png)
+
+## 效果图
+App2通过Center向App1发送消息，
+![image](https://github.com/helang1991/MessageCenterDemo/blob/master/png/app2.png)
+![image](https://github.com/helang1991/MessageCenterDemo/blob/master/png/app1.png)
 
 ## 总结
 代码很简单，没有怎么封装，也没有使用什么设计模式，你可以根据自己的项目情况来实现<Br/>
+
+
 
