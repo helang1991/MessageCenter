@@ -16,7 +16,7 @@ import com.helang.lib.IMyAidlInterface;
  */
 public class MyService extends Service {
     private final static String TAG = MyService.class.getSimpleName();
-    private RemoteCallbackList<IMyAidlCallBackInterface> callbackList = new RemoteCallbackList<>();
+    private RemoteCallbackList<IMyAidlCallBackInterface> callbackList = new RemoteCallbackList<>();//回调的关键（API>=17,才能使用）
 
     @Override
     public void onCreate() {
@@ -44,20 +44,19 @@ public class MyService extends Service {
         @Override
         public void registerListener(IMyAidlCallBackInterface listener) throws RemoteException {
             callbackList.register(listener);//注册回调listener
-//            callbackList.beginBroadcast();//开始回调
             Log.d(TAG,"registerListener");
         }
 
         @Override
         public void unregisterListener(IMyAidlCallBackInterface listener) throws RemoteException {
             callbackList.unregister(listener);//取消回调listener
-//            callbackList.finishBroadcast();//完成回调
             Log.d(TAG,"unregisterListener");
         }
     };
 
     /**
-     * 发送消息给全部的client（你也可以指定发送给某个client）
+     * 发送消息给全部的client（你也可以指定发送给某个client,也可
+     * 以根据自己的业务来封装一下Bean，记得要实现Parcelable接口来序列化
      * @param tag
      * @param message
      */
