@@ -13,7 +13,7 @@
 ## 流程图
 看下基本的流程图，app要通过一个Server进程来实现消息的消息的发送和接收<Br/>
 
-![image](https://github.com/helang1991/MessageCenterDemo/blob/master/MessageCenter.png)
+![image](https://github.com/helang1991/MessageCenterDemo/blob/master/test.png)
 
 ## 总结
 代码很简单，没有怎么封装，也没有使用什么设计模式，你可以根据自己的项目情况来实现<Br/>
