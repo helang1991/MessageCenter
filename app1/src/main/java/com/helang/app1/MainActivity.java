@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    text.append("tag="+tag+"  message="+message);
+                    text.append("tag="+tag+"  message="+message+"\n");
                 }
             });
         }
