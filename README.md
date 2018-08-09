@@ -1,4 +1,5 @@
-# MessageCenterDemo
+# MessageCenter
+### 详情文章：https://blog.csdn.net/helang296479893/article/details/81321057</br>
 在一些特定的Android车机中的系统中，需要APP进程之间的通信，但不是APP之间直接相互通信，而是由一个消息中心处理后，
 再决定消息如何转发，简单地说有点类似于一个由服务器的聊天室</br>
 当然方式有很多，先列举几种方式，看看优缺点<Br/>
